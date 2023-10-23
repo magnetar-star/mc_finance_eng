@@ -21,3 +21,5 @@ double GetOneGaussianByBoxMuller() {
     
     return result;
 }
+
+
