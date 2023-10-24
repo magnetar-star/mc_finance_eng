@@ -27,6 +27,27 @@ double NormalDensity(double x) {
     return exp(-x*x/2) / sqrt(2 * M_PI);
 }
 
+double CumulativeNormal(double x) {
+    static double a[5] = { 0.319381530,
+                           -0.356563782,
+                           1.781477937,
+                           -1.821255978,
+                           1.330274429 };
+    
+    static double p = 0.2316419;
+    static double c = 0.918938533204672;
+    double y;
+    
+    double t = 1/(1 + fabs(x) * p);
+    double s = ((((a[4]*t + a[3])*t + a[2])*t + a[1])*t + a[0])*t;
+    
+    y = s * exp(-0.5 * x * x - c);
+    
+    if (x > 0) y = 1 - y;
+    
+    return y;
+}
+
 // Beasley-Springer-Moro algorithm
 double InverseCumulativeNormal(double u) {
     static double a[4] = { 2.50662823884,
