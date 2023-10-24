@@ -26,8 +26,8 @@
 /* Begin PBXFileReference section */
 		BCCCB8682AE6EE9C006BC24F /* mc_examples */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = mc_examples; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCCCB86B2AE6EE9C006BC24F /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
-		BCCCB8722AE70E5A006BC24F /* Normals.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Normals.hpp; sourceTree = "<group>"; };
 		BCCCB8732AE70E5A006BC24F /* Normals.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Normals.cpp; path = ../random_generator/Normals.cpp; sourceTree = "<group>"; };
+		BCCCB87C2AE8278B006BC24F /* Normals.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Normals.hpp; path = ../random_generator/Normals.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,7 +45,7 @@
 			isa = PBXGroup;
 			children = (
 				BCCCB8732AE70E5A006BC24F /* Normals.cpp */,
-				BCCCB8722AE70E5A006BC24F /* Normals.hpp */,
+				BCCCB87C2AE8278B006BC24F /* Normals.hpp */,
 				BCCCB86A2AE6EE9C006BC24F /* mc_examples */,
 				BCCCB8692AE6EE9C006BC24F /* Products */,
 			);

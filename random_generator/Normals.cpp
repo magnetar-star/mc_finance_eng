@@ -28,7 +28,7 @@ double NormalDensity(double x) {
 }
 
 // Beasley-Springer-Moro algorithm
-double InverseCummulativeNormal(double u) {
+double InverseCumulativeNormal(double u) {
     static double a[4] = { 2.50662823884,
                            -18.61500062529,
                            41.39119773534,
