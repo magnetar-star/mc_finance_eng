@@ -13,7 +13,7 @@ using namespace std;
 
 int main(int argc, const char * argv[]) {
     double u = rand() / static_cast<double>(RAND_MAX);
-    double x = CumulativeNormal(u);
+    double x = InverseCumulativeNormal(2);
     
     
     cout << x << endl;

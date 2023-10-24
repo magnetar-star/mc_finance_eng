@@ -1,6 +1,7 @@
 #include "Normals.hpp"
 #include <cstdlib>
 #include <cmath>
+#include <stdexcept>
 
 using namespace std;
 
@@ -50,6 +51,10 @@ double CumulativeNormal(double x) {
 
 // Beasley-Springer-Moro algorithm
 double InverseCumulativeNormal(double u) {
+    if (u < 0 || u > 1) {
+        throw("Argument to InverseCumulativeNormal must be in [0,1]");
+    }
+    
     static double a[4] = { 2.50662823884,
                            -18.61500062529,
                            41.39119773534,
