@@ -1,8 +1,6 @@
 #ifndef NORMALS_H
 #define NORMALS_H
 
-#include <Eigen/Dense>
-
 double GetOneGaussianByBoxMuller();
 
 double NormalDensity(double x);
