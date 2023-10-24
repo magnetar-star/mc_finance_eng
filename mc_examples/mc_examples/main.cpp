@@ -8,15 +8,26 @@
 #include <iostream>
 #include <cmath>
 #include "Normals.hpp"
+#include <vector>
+
 
 using namespace std;
 
 int main(int argc, const char * argv[]) {
-    double u = rand() / static_cast<double>(RAND_MAX);
-    double x = InverseCumulativeNormal(2);
+    std::vector<double> a;
+    int N {10000000};
     
+    for (int i =0; i < N; i++) {
+        a.push_back(GetOneGaussianByBoxMuller());
+    }
     
-    cout << x << endl;
+    double sum{0};
+    
+    for (double n : a) {
+        sum += n;
+    }
+    
+    cout << "the mean is " << sum/a.size() << endl;
     
     return 0;
 }

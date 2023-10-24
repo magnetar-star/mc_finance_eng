@@ -52,7 +52,7 @@ double CumulativeNormal(double x) {
 // Beasley-Springer-Moro algorithm
 double InverseCumulativeNormal(double u) {
     if (u < 0 || u > 1) {
-        throw("Argument to InverseCumulativeNormal must be in [0,1]");
+        throw std::invalid_argument("Argument to InverseCumulativeNormal must be in [0,1]");
     }
     
     static double a[4] = { 2.50662823884,
